@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#work{
+			width: 550px;
+			height: auto;
+			padding-bottom: 20px;
+			background: #222;
+			color: #fff;
+		}
+		#work p{
+			float: right;
+			margin-right: 20px;
+			cursor: pointer;
+		}
+		#work form{
+		}
+		#work textarea{
+			width: 400px;
+			height: 200px;
+		}
+		#work input{
+			width: 400px;
+			height: 24px;
+			border-radius: 5px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<div id="work">
+		<p onclick="hide()">X</p>
+		<br>
+		<br>
+		<form>
+			<table>
+				<br>
+
+				<tr>
+					<th>Work</th>
+				</tr>
+				<tr>
+					<td><input type="text" name="work"></td>
+				</tr>
+				<tr>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td><textarea type="tex" name="description"></textarea></td>
+				</tr>
+				<tr>
+					<th>Time</th>
+				</tr>
+				<tr>
+					<td><input type="text" name="time"></td>
+				</tr>
+				<tr>
+					<td><input style="height: 30px; width: 100px; color: #fff; background:#000;" type="submit" name="submit" value="Create"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</center>
+	<script type="text/javascript">
+		function hide(){
+				document.getElementById('work').style.display="none";
+		}
+		
+	</script>
+</body>
+</html>
